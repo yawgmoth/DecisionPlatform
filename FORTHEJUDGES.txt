@@ -1,9 +1,9 @@
 A note to the judges:
 
-I'm sure while perusing the source-code you will a number of WTFs, but to aid your evaluation, the biggest ones (IMO) are:
+I'm sure while perusing the source-code you will find a number of WTFs, but to aid your evaluation, the biggest ones (IMO) are:
 
 - protocol.h, using the preprocessor to provide common code for Java, C++ and Python
-- The protocol itself, with > 20 messages exchanged
+- The protocol itself, with 20 messages exchanged
 - The highpass-filter (ofc implemented in Fortran, like all numerical operations should be!), which defeats the random number generator by transforming the sequence into 0,1,0,1,0,1,... every time (which is, incidentally, the highest frequency that can be obtained), unless the smoothing factor is 0, in which case the output will be all 0s
 - The plugin-system, including passing the function pointer to fortran and back out ...
 - "md5-based" authentication
