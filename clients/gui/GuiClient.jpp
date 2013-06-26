@@ -68,7 +68,7 @@ public class GuiClient extends JFrame implements ActionListener {
         porttf = new JTextField("port");
         settp.add(porttf);
 
-        JLabel hw2 = new JLabel("DecisionPlatform v1.34.5b, build 628tau, by Gold Rubeberg software soltuions");
+        JLabel hw2 = new JLabel("DecisionPlatform v5, build 628tau, by Gold Rubeberg Software Soltuions");
         aboutp.add(hw2);
 
         pane.addTab("Main", mainp);
