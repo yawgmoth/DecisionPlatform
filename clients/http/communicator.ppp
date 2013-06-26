@@ -1,0 +1,32 @@
+#define LANG 3
+
+import socket
+result = None
+sock = None
+username = "web"
+pwd = "web"
+result = ""
+
+def communicate():
+    global sock
+    sock = socket.socket()
+    sock.connect(('127.0.0.1', 31337))
+    onemessage()
+
+def pyifelse(cond, blk, blk1):
+    if cond: return blk
+    else: return blk1
+
+def readdata():
+    line = ""
+    last = ""
+    while last != '\n':
+        last = sock.recv(1)
+        if last != '\n':
+            line += last
+    return line
+
+def send_data(msg):
+    sock.send(msg + "\n")
+
+#include "protocol.h"
