@@ -42,6 +42,8 @@ class Server
             addr.sin_port = 27002;
             addr.sin_family = AF_INET;
             memset(&(addr.sin_addr), INADDR_ANY, sizeof(in_addr));
+            bind(s, (sockaddr*)&addr, sizeof(addr));
+            listen(s, 5);
         }
         ServerConn runonce()
         {
