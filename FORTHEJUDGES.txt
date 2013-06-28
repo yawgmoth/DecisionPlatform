@@ -13,3 +13,4 @@ I'm sure while perusing the source-code you will find a number of WTFs, but to a
 - Do not mess with the include order too much!
 - The "beta" android client that doesn't do anything (but requires internet-privileges anyway!)
 - And many, many more
+- Several details will be investigated on my blog in the next few weeks: http://un-defined-behavior.blogspot.co.at/ 
